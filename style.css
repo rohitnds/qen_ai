@@ -5,10 +5,24 @@
 
 #background {
   z-index: -10;
+    opacity: 0.8;
+    filter: blur(1px);
+}
+.btn:hover{
+  background-color: #2d9ccc;
+    border: 1px solid #2d9ccc;
+    color: #ffffff;
 }
 .rounded-12 {
   border-radius: 42px;
   border: 1px solid #2d9ccc;
+}
+.navbar-brand .logo{
+  min-width: 140px;
+}
+.bg-color{
+  border: 1px solid #2d9ccc;
+  background-color: #2d9ccc;
 }
 span.bl-color {
   color: #2d9ccc;
@@ -18,7 +32,7 @@ span.bl-color {
   font-weight: 700;
 }
 nav img.logo{
-  width: 140px;
+  min-width: 140px;
 }
 .header {
   z-index: 2;
@@ -40,10 +54,10 @@ nav a.nav-link {
 /* hero section */
 .hero-section {
   position: relative;
-  padding: 300px 0 200px;
+  padding: 300px 0 200px;   
+   background: linear-gradient(135deg, #2D9CCC20 20%, #00ffc600, #2D9CCC20 80%);
 }
 .hero-section h4 {
-  border-color: #000000;
   display: inline-block;
   padding: 4px 12px;
   color: #000000;
@@ -71,9 +85,15 @@ nav a.nav-link {
   border-radius: 16px;
   border: 1px solid #e5e7eb;
 }
+.service-section .inner-border:hover {
+  border: 1px solid #000 !important;
+  transform: translateY(-5px);
+}
 .service-section .inner-border {
   border-radius: 12px;
   border: 1px solid #e5e7eb;
+  
+  transition: 0.2s all ease-in-out;
 }
 .custom-pill {
   background-color: #d9f3ff; /* light blue background */
@@ -107,6 +127,15 @@ nav a.nav-link {
   height: 2px;
   width: 2px;
 }
+.icon-flip{
+  position: relative;
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  background-color: #D7F3FF;
+  border-radius: 10px;
+  padding: .5rem;
+}
 .icon-flip::after {
     content: "";
     position: absolute;
@@ -122,9 +151,8 @@ nav a.nav-link {
 ease-in-out;
 }
 .icon-flip:hover::after {
-      background: #204283;
+      background: #2d9ccc;
 }
-
 .testimonial-section .trusted-box {
   padding: 40px 20px;
 }
@@ -217,6 +245,10 @@ ease-in-out;
     background-color: #151517 !important;
     transition: all 0.3s ease;
   }
+  .navbar-brand .logo{
+  width: 140px;
+}
+
 }
 @media (max-width: 479px) {
   .hero-section h1 {
@@ -267,7 +299,7 @@ ease-in-out;
     background-color: #151517 !important;
     transition: all 0.3s ease;
   }
-  .header .btn{
-    font-size: 12px;
-  }
+  .navbar-brand .logo{
+  width: 140px;
+}
 }
